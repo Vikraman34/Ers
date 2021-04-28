@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	   <link rel="stylesheet" href="mixstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+  </head>
+
+  <body>
+
+	<center><h1>Login</h1>
+	<br>
+	<span class="multi-user"onclick="fun1(this);">Student</span>
+	<span class="multi-user" onclick="fun2(this);">Examiner</span></center>
+	
+	
+	<form id="student" class="student-form-style" action="http://localhost:8080/ers/Student" method="post">
+	<header><img src="test.png"></header>
+		<input type="text" class="inputs" id="sname" name="sname" placeholder="Enter Student Id" value="" autocomplete="off" required><br>
+		<br>
+		<input type="password" class="inputs" id="spassword" name="spassword" placeholder="Password" value="" autocomplete="off" required><br>
+		<br><input align="center" id="login" class="login-button" type="submit" value="Login">
+		<input align="center" id="login"  class="login-button"  type="button" value="Sign Up" onclick="window.location.replace('new.html')">
+		
+	</form>
+	
+	<form id="examiner" class="examiner-form-style" action="http://localhost:8080/ers/Examiner" method="post">
+	<header><img src="test.png"></header>
+		<br>&emsp;<input type="text" class="inputs" id="ename" name="ename" placeholder="Enter Examiner Id" value="" autocomplete="off" required><br>
+		&emsp;<input type="password" class="inputs" id="epassword" name="epassword" placeholder="Password" value="" autocomplete="off" required><br>
+		&emsp;&emsp;&emsp;<input id="login" class="login-button" type="submit" value="Login">
+	</form>
+	
+	<script>
+		document.getElementById("examiner").style.display="none";
+		function fun1(x){
+			document.getElementById("examiner").style.display="none";
+			setTimeout(function(){document.getElementById("student").style.display="block"},500);
+		}
+		function fun2(x){
+			document.getElementById("student").style.display="none";
+			setTimeout(function(){document.getElementById("examiner").style.display="block"},500);
+			
+		}
+		
+	</script>
+  </body>
+ </html>

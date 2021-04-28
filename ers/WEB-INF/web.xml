@@ -1,0 +1,225 @@
+<web-app>
+<servlet>
+	<servlet-name>Student</servlet-name>
+	<servlet-class>Student</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Student</servlet-name>
+	<url-pattern>/Student</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>Examiner</servlet-name>
+	<servlet-class>Examiner</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Examiner</servlet-name>
+	<url-pattern>/Examiner</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>Menu</servlet-name>
+	<servlet-class>Menu</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Menu</servlet-name>
+	<url-pattern>/Menu</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>Newstudent</servlet-name>
+	<servlet-class>Newstudent</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Newstudent</servlet-name>
+	<url-pattern>/Newstudent</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>Signout</servlet-name>
+	<servlet-class>Signout</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Signout</servlet-name>
+	<url-pattern>/Signout</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>ViewCourses</servlet-name>
+	<servlet-class>ViewCourses</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ViewCourses</servlet-name>
+	<url-pattern>/ViewCourses</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>ConfirmDetails</servlet-name>
+	<servlet-class>ConfirmDetails</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ConfirmDetails</servlet-name>
+	<url-pattern>/ConfirmDetails</url-pattern>
+</servlet-mapping>
+<context-param> 
+      <description>Location to store uploaded file</description> 
+      <param-name>file-upload</param-name> 
+      <param-value>
+         C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\ers\files\upload
+      </param-value> 
+</context-param>
+<servlet>
+   <servlet-name>UploadServlet</servlet-name>
+   <servlet-class>UploadServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>UploadServlet</servlet-name>
+   <url-pattern>/UploadServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>City</servlet-name>
+<servlet-class>City</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>City</servlet-name>
+<url-pattern>/City</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>Course</servlet-name>
+<servlet-class>Course</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>Course</servlet-name>
+<url-pattern>/Course</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>ViewData</servlet-name>
+<servlet-class>ViewData</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>ViewData</servlet-name>
+<url-pattern>/ViewData</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>Payment</servlet-name>
+<servlet-class>Payment</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>Payment</servlet-name>
+<url-pattern>/Payment</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>Status</servlet-name>
+<servlet-class>Status</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>Status</servlet-name>
+<url-pattern>/Status</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>WaitingId</servlet-name>
+<servlet-class>WaitingId</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>WaitingId</servlet-name>
+<url-pattern>/WaitingId</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>WaitingData</servlet-name>
+<servlet-class>WaitingData</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>WaitingData</servlet-name>
+<url-pattern>/WaitingData</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>MenuAdmin</servlet-name>
+<servlet-class>MenuAdmin</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>MenuAdmin</servlet-name>
+<url-pattern>/MenuAdmin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>Approve</servlet-name>
+<servlet-class>Approve</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>Approve</servlet-name>
+<url-pattern>/Approve</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>ApprovedId</servlet-name>
+<servlet-class>ApprovedId</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>ApprovedId</servlet-name>
+<url-pattern>/ApprovedId</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>ApprovedData</servlet-name>
+<servlet-class>ApprovedData</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>ApprovedData</servlet-name>
+<url-pattern>/ApprovedData</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>Disapprove</servlet-name>
+<servlet-class>Disapprove</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>Disapprove</servlet-name>
+<url-pattern>/Disapprove</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>Hallticket</servlet-name>
+<servlet-class>Hallticket</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>Hallticket</servlet-name>
+<url-pattern>/Hallticket</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>RegCheck</servlet-name>
+<servlet-class>RegCheck</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>RegCheck</servlet-name>
+<url-pattern>/RegCheck</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+<servlet-name>OptOut</servlet-name>
+<servlet-class>OptOut</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>OptOut</servlet-name>
+<url-pattern>/OptOut</url-pattern>
+</servlet-mapping>
+</web-app>

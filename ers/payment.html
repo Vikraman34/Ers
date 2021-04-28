@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <title>Payment</title>
+	<center><h1>Payment Portal for Examination Fee </h1></center>
+  </head>
+<body>
+<form>
+<div id="form-container">
+
+  <div id="card-front">
+    <div id="shadow"></div>
+    <div id="image-container">
+      <span id="amount">paying: <strong>1000 Rupees</strong></span>
+      <span id="card-image">
+      </span>
+    </div>
+
+    <label for="card-number">
+        Card Number
+      </label>
+    <input type="text" id="card-number" placeholder="1234 5678 9101 1112" length="16" autocomplete="off" required>
+    <div id="cardholder-container">
+      <label for="card-holder">Card Holder
+      </label>
+      <input type="text" id="card-holder" placeholder="Enter your name" autocomplete="off" required />
+    </div>
+    <div id="exp-container">
+      <label for="card-exp">
+          Expiration
+        </label>
+      <input id="card-month" type="text" placeholder="MM" length="2" autocomplete="off" required>
+      <input id="card-year" type="text" placeholder="YY" length="2" autocomplete="off" required>
+    </div>
+        <div id="cvc-container">
+      <label for="card-cvc">CVV</label>
+      <input id="card-cvc" placeholder="XXX" type="text" length="3" autocomplete="off" required>
+      <p>3 digits</p>
+    </div>
+  </div>
+  <div id="card-back">
+    <div id="card-stripe">
+    </div>
+
+  </div>
+  <input type="text" id="card-token" />
+  <button type="button" id="card-btn" onclick="load()">Submit</button>
+  </form>
+
+</div>
+<script>
+function load()
+{
+	window.location.replace("http://localhost:8080/ers/Payment");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="docsstyle.css">
+    <title>Register for Examination</title>
+   </head>
+   
+   <body>
+	  <center><h1 class="text-heading-fill">Upload the mentioned Documents</h1></center>
+	 <div class="polaroid rotate_right">
+	<img src="polaroid1.PNG"  width="204" height="180">
+	</div>
+	<div class="polaroid rotate_left">
+	<img src="polaroid2.PNG" width="204" height="180">
+	</div>
+	  <form id="id_verify" action = "http://localhost:8080/ers/UploadServlet" method = "post" enctype = "multipart/form-data">
+		  <label for="photo" >Upload Photo:</label><br>
+		  <input type = "file" id="photo" name = "photo" size = "50"><br>
+		  
+		  <label for="sign" >Upload Siganture:</label><br>
+		  <input type = "file" id="sign" name = "sign" size = "50"><br>
+		  
+		  <label for="Aadhar" >Upload Aadhar:</label><br>
+		  <input type = "file" id="aadhar" name = "aadhar" size = "50"><br>
+      <input id="docs" class="button-style" type = "submit" value = "Next" />	
+	  </form>
+
+  
+
+  </body>
+</html> 
+

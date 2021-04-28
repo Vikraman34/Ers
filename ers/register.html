@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="signupstyle.css">
+    <title>Register for Examination</title>
+   </head>
+   
+   <body>
+      <center><h3 class="text-heading-fill">Fill the form:</h3></center>
+	  <form id="details" action="http://localhost:8080/ers/ConfirmDetails" method="post">
+	 <br><label for="name">Name as in Hall-Ticket:</label>
+		<input type="text" id="name" name="name" placeholder="Enter Full Name" value="" autocomplete="off" required><br>
+	 <br><label for="college">Select your Instituition:</label>
+		<input type="text" id="college" name="college" placeholder="Enter College Name" value="" autocomplete="off" required><br>	
+	  <br><label for="course" >Choose Course</label><br>
+        <input type="text" id="course" name="course" list="courses" onkeyup="getCourse()" placeholder="Choose course" autocomplete="off"/><datalist id ="courses" >
+        </datalist>	
+		<br>
+		<div style="color:white">
+		<br>
+        <label for="city1" >Location preference 1</label><br>
+        <input type="text" id="city1" name="city1" list="cities" onkeyup="getCity1()" placeholder="Enter city name" autocomplete="off"/><datalist id ="cities" >
+        </datalist>
+		<br><br>
+		<label for="city2" >Location preference 2</label><br>
+        <input type="text" id="city2" name="city2" list="cities" onkeyup="getCity2()" placeholder="Enter city name" autocomplete="off"datalist id ="cities" >
+        </datalist>
+		<br><br>
+		<label for="city3" >Location preference 3</label><br>
+        <input type="text" id="city3" name="city3" list="cities" onkeyup="getCity3()" placeholder="Enter city name" autocomplete="off"/><datalist id ="cities" >
+        </datalist>
+		<br>
+		</div>
+	<input id="reg" class="button-style" type = "submit" value = "Next" />	
+	<input id="reg" class="button-style" type="button" value="Back" onclick="view()">
+	
+    <script>
+
+		function view(){
+			window.location.replace('http://localhost:8080/ers/Menu');
+		}
+						    
+        function fetch(city){
+          var request = new XMLHttpRequest();
+    
+           var URL = "City?city="+city;
+
+          request.onreadystatechange = function(){
+          if(this.readyState == 4 && this.status == 200) {
+            var val = request.responseText;
+            console.log(val)
+            document.getElementById("cities").innerHTML = val;
+            }
+          };
+          request.open('GET', URL, true);
+    
+          request.send();
+        }
+
+        function getCity1(){
+          var city1= document.getElementById("city1").value;
+          fetch(city1);
+        }
+		function getCity2(){
+          var city2= document.getElementById("city2").value;
+          fetch(city2);
+        }
+		 function getCity3(){
+          var city3= document.getElementById("city3").value;
+          fetch(city3);
+        }
+		
+		function fetch_course(course){
+          var req = new XMLHttpRequest();
+    
+           var URL_C = "Course?course="+course;
+
+          req.onreadystatechange = function(){
+          if(this.readyState == 4 && this.status == 200) {
+            var val_c = req.responseText;
+            console.log(val_c)
+            document.getElementById("courses").innerHTML = val_c;
+            }
+          };
+          req.open('GET', URL_C, true);
+    
+          req.send();
+        }
+
+        function getCourse(){
+          var course = document.getElementById("course").value;
+          fetch_course(course);
+        }
+    </script>
+
+  </body>
+
+</html>
+	 
+   </body>
+</html>

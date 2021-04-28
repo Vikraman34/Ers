@@ -1,0 +1,167 @@
+form{
+  margin-left: 30%;
+  font-size:17px;
+  font-family:arial;
+  font-weight:bold;
+  color:black;
+  background-image:url("formbg.jpg");
+  opacity:0.8;
+  background-size:cover;
+  padding:30px;
+  border:5px solid black;
+  border-radius: 20px;
+  width:35%;
+  box-shadow: 10px 10px 5px grey;
+}
+
+input,select,textarea{
+  font-size:17px;
+  font-family:arial;
+  font-weight:bold;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-shadow: 0 4px 6px -5px hsl(0, 0%, 40%), inset 5px 4px 6px -5px black;
+  border-radius:0.5em;
+
+}
+.button-style{
+  padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.button-style:hover {background-color: #3e8e41}
+
+.button-style:active{
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#login{
+  width:30%;
+  font-weight: bold;
+  background-color:lightgreen;
+}
+#reg,#docs{
+  width:30%;
+  font-weight: bold;
+  background-color:lightgreen;
+  position:relative;
+  left:50px;
+}
+
+
+#logout,#home{
+  width:30%;
+  font-weight: bold;
+  background-color:lightblue;
+  position:relative;
+  left:50px;
+}
+
+input[type=submit]:hover{
+  color:white;
+}
+input[type=button]:hover{
+  color:white;
+}
+
+
+
+
+span{
+	cursor:pointer;
+}
+body {
+  height: auto;
+  display:inline;
+  background-image:url("wallpaper1.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+.text-heading {
+    position: relative;
+    transform: translate(0%,-80%);
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 3em;
+    font-weight: 30;
+    color: black;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+		1px 18px 6px rgba(16,16,16,0.4),
+		1px 22px 10px rgba(16,16,16,0.2),
+		1px 25px 35px rgba(16,16,16,0.2),
+		1px 30px 60px rgba(16,16,16,0.4);
+}
+.text-heading-fill {
+    position: relative;
+    transform: translate(0%,-80%);
+    font-family: verdana;
+    font-size: 2em;
+    font-weight: 30;
+    color: black;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+		1px 18px 6px rgba(16,16,16,0.4),
+		1px 22px 10px rgba(16,16,16,0.2),
+		1px 25px 35px rgba(16,16,16,0.2),
+		1px 30px 60px rgba(16,16,16,0.4);
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color:#a6eded}
+tr:nth-child(odd){backgound-color: #f089a6}
+tr:hover {background-color:#f5f5f5;}
+
+th {
+  background-color: #0e0d40;
+  color: white;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 2px solid black;
+  float: center;
+  width: 200px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}

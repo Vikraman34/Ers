@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='signupstyle.css'>
+    <title>Approved List</title>
+	<style>
+		.list02:hover{
+		cursor:pointer;
+	}
+	</style>
+  </head>
+
+  <body onload="display_list1()">
+	<br>
+	<center><div id="Waiting List"><br>
+	<label style="color:#9B1B30;font-size:30px;font-weight:bold">Approved List</label><br><br>
+	<div>
+	<br>
+	<div id="list1" class="list02"></div>
+	<div id="list2"></div>
+	<div id="button1"><center><input type="button" value="Reject" onclick="accept1()"></center></div>
+	<div id="button2"><center><input type="button" value="Back" onclick="view()"></center></div>
+	</center>
+	<script>
+		function display_list1(){
+			var xhttp;
+			var url="ApprovedId";
+			xhttp= new XMLHttpRequest();
+			xhttp.onreadystatechange= function() {
+				if(this.readyState==4 && this.status==200) {
+					var val=xhttp.responseText;
+					document.getElementById("list1").innerHTML=val;
+				}
+			};
+		xhttp.open("GET",url,true);
+		xhttp.send();
+		}
+		
+		var sid;
+		
+		function display_list2(id){
+			var xhttp;
+			sid=id;
+			var url="ApprovedData?id="+id;
+			xhttp= new XMLHttpRequest();
+			xhttp.onreadystatechange= function() {
+				if(this.readyState==4 && this.status==200) {
+					var val=xhttp.responseText;
+					document.getElementById("list2").innerHTML=val;
+				}
+			};
+		xhttp.open("GET",url,true);
+		xhttp.send();
+		}
+		
+		function accept1(){
+			var xhttp;
+			var url="Disapprove?id="+sid;
+			xhttp= new XMLHttpRequest();
+			xhttp.onreadystatechange= function() {
+				if(this.readyState==4 && this.status==200) {
+					var val=xhttp.responseText;
+				}
+			};
+		xhttp.open("GET",url,true);
+		xhttp.send();
+		window.location.replace('approved.html')
+		}
+		
+		function view(){
+			window.location.replace('http://localhost:8080/ers/MenuAdmin');
+		}
+	</script>
+  </body>
+ </html>
