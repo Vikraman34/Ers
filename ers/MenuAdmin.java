@@ -27,9 +27,9 @@ public class MenuAdmin extends HttpServlet
 							"<br><br><h1>Select from below</h1>"+
 							"<div class='topnav'>"+
 							"<nav style='font-size:20px'>"+
-							"<br><a href='http://localhost:8080/ers/waiting.html'>View Waiting List</a>"+
-							"<br><a href='http://localhost:8080/ers/approved.html'>View Approved List</a>"+
-							"<br><a href='http://localhost:8080/ers/Signout'>Sign Out</a>"+
+							"<a href='http://localhost:8080/ers/waiting.html'>View Waiting List</a>"+
+							"<a href='http://localhost:8080/ers/approved.html'>View Approved List</a>"+
+							"<a href='http://localhost:8080/ers/Signout'>Sign Out</a>"+
 							"</nav></center>"+
 							"</div>"+
 						"</body>"+
