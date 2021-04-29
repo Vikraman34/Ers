@@ -27,12 +27,12 @@ public class Menu extends HttpServlet
 							"<br><br><h1>Select from below</h1>"+
 							"<div class='topnav'>"+
 							"<nav style='font-size:20px'>"+
-							"<br><a href='http://localhost:8080/ers/ViewCourses'>View Exam Details</a><br>"+
-							"<br><a href='http://localhost:8080/ers/RegCheck'>Register For Exam</a><br>"+
-							"<br><a href='http://localhost:8080/ers/OptOut'>Optout of a course</a><br>"+
-							"<br><a href='http://localhost:8080/ers/Status'>Check Status</a><br>"+
-							"<br><a href='http://localhost:8080/ers/Hallticket'>View Hallticket</a><br>"+
-							"<br><a href='http://localhost:8080/ers/Signout'>Sign Out</a><br>"+
+							"<br><a href='http://localhost:8080/ers/ViewCourses'>View Exam Details</a>"+
+							"<br><a href='http://localhost:8080/ers/RegCheck'>Register For Exam</a>"+
+							"<br><a href='http://localhost:8080/ers/OptOut'>Optout of a course</a>"+
+							"<br><a href='http://localhost:8080/ers/Status'>Check Status</a>"+
+							"<br><a href='http://localhost:8080/ers/Hallticket'>View Hallticket</a>"+
+							"<br><a href='http://localhost:8080/ers/Signout'>Sign Out</a>"+
 							"</nav></center>"+
 							"<div class='container'>"+"<figure><figcaption>Hover the image for Today's Quote!</figcaption></figure>"+
 							"<img src='picday.png' alt='Avatar' class='image'>"+
